@@ -1,0 +1,20 @@
+#contact {
+  background-color: rgba(158, 154, 154, 0.247);
+  /* color: white; */
+  padding: 22rem 0 1rem 0;
+  position: relative;
+}
+
+.number-contact{
+  font-weight: 400;
+}
+
+.person{
+  font-weight: 400;
+}
+
+.request{
+  font-weight: 600;
+
+}
+

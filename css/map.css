@@ -1,0 +1,17 @@
+#map{
+    width: 100%;
+    /* background-color: orangered; */
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translate(-50%);
+}
+
+#map iframe{
+    width: 100%;
+    border: 2px solid red;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.20);
+
+}

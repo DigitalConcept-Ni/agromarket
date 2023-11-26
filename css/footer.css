@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  background-color: #272727;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  list-style: none;
+  margin: 10px;
+}

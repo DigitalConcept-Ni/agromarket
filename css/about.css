@@ -1,0 +1,37 @@
+#about {
+  height: auto;
+  width: 100%;
+  background: #272727;
+  padding: 2rem 0 15rem 0;
+  color: white;
+}
+
+.img-about {
+  background-image: url("../img/imgClient/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.history p {
+  text-align: justify;
+}
+
+.frame {
+  border: 5px solid #333333;
+  padding: 1rem;
+}
+
+.container-service{
+    margin-top: 2rem;
+}
+
+.about-service-card{
+    background: #474747;
+    padding: 0.1rem 0;
+}
+
+.about-ventilation{
+    height: 100%;
+    
+}

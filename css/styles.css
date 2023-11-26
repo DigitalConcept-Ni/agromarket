@@ -1,0 +1,109 @@
+@import url("navbar.css");
+@import url("banner.css");
+@import url("slider.css");
+@import url("services.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("map.css");
+@import url("about.css");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:wght@600&display=swap");
+
+:root {
+  /* --fondo: #272727; */
+  --fondo: #6b7375;
+  --fondo2: #272727;
+  --card: #517fbd;
+  --cardbg: #7697b7;
+  --azul: #00933B;
+}
+
+body{
+  /* background-color: #272727; */
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+  padding: 2rem 0rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+/* STYLES FOR ICON */
+
+#icon {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  height: 50px;
+  width: 50px;
+  z-index: 10;
+}
+
+#icon > a > img {
+  height: 100%;
+
+}
+
+/* STYLES FOR THE NAV */
+
+.nav-item > a {
+  margin: 0 1rem;
+}
+.nav-item > a {
+  color: white !important;
+}
+
+.navbar-toggler {
+  margin: 0.25rem 1rem;
+  background-color: white;
+}
+
+/* STYLES FOR SCROLL BAR */
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background: #272727;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 100%;
+  height: 2rem;
+  background: var(--azul);
+  border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .nav-info {
+   display: none;
+  }
+
+  .navbar-item {
+    font-size: 1.5rem;
+  }
+
+  .content-items{
+    width: 100vw;
+  }
+
+  .margin{
+    margin: 2rem 0;
+  }
+
+  #content_info_banner{
+    width: 15rem;
+  }
+
+
+
+
+}

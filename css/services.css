@@ -1,0 +1,96 @@
+#services {
+  height: auto;
+  background-color: rgba(158, 154, 154, 0.089);
+  padding: 3rem 0 0 0;
+}
+
+.head-services p{
+padding:1rem 2rem;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19.3rem), 1fr));
+  grid-auto-rows: 25rem;
+  gap: 2rem 1rem;
+  justify-content: center;
+  padding: 2rem 2rem; 
+  border-top: 2px solid #0261df;
+}
+
+.grid-card {
+  background: #474747;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 10px;
+}
+
+.img-card {
+  height: 35%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-cooling {
+  background-image: url("../img/imgClient/cacao.jpg");
+}
+
+.img-ventilation {
+  background-image: url("../img/imgClient/beans.jpg");
+}
+
+.img-heating {
+  background-image: url("../img/imgClient/corns.jpg");
+}
+
+.card-services-items {
+  list-style: none;
+  color: white;
+}
+
+.btn-service {
+  background: #00933B;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+}
+
+.btn-service > a {
+  color: white;
+}
+
+.btn-service > a:hover {
+  color: white;
+  background: green;
+}
+
+.title-card-service {
+  padding: 0px 20px;
+  color: white;
+  /* font-family: "Fjalla One", sans-serif; */
+}
+
+#maintence {
+  padding: 3rem 0 13rem 0;
+  background-image: url('../img/pops.png');
+  background-color: #00933B;
+}
+
+.info-maintence {
+  color: white;
+}
+
+.info-maintence > p {
+  text-align: justify;
+}
+
+.img-maintence {
+  background-image: url("../img/agri.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
