@@ -16,10 +16,17 @@ nav {
   display: flex;
   align-items: center;
 }
-
-/* nav info */
 .nav-info {
+  position: relative;
   padding: 0 1rem;
+  width: 100%;
+}
+
+.nav-info span{
+  position: absolute;
+  top: 0.4rem;
+  right: 1.5rem;
+  cursor: pointer;
 }
 
 .nav-info .title-call {

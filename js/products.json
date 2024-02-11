@@ -1,0 +1,11 @@
+{
+    "azucar":{
+        "price": "C$150",
+        "description": "Finca el arroyo",
+        "um": "Quintal",
+        "img": "azucar-morena.png"
+    },
+    "cacao":{
+
+    }
+}
