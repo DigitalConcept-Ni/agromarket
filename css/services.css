@@ -74,23 +74,3 @@ padding:1rem 2rem;
   /* font-family: "Fjalla One", sans-serif; */
 }
 
-#maintence {
-  padding: 3rem 0 13rem 0;
-  background-image: url('../img/pops.png');
-  background-color: #00933B;
-}
-
-.info-maintence {
-  color: white;
-}
-
-.info-maintence > p {
-  text-align: justify;
-}
-
-.img-maintence {
-  background-image: url("../img/agri.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
