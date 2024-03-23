@@ -1,8 +1,8 @@
 @import url("navbar.css");
 @import url("banner.css");
 @import url("products.css");
-@import url("slider.css");
-@import url("services.css");
+/* @import url("slider.css"); */
+/* @import url("services.css"); */
 @import url("contact.css");
 @import url("footer.css");
 @import url("map.css");
@@ -36,6 +36,29 @@ h2,
 h3,
 h4 {
   font-family: "Fjalla One", sans-serif;
+}
+
+/* PART OF THE MAINTENCE */
+
+#maintence {
+  padding: 3rem 0 13rem 0;
+  /* background-image: url('../img/pops.png'); */
+  background-color: #00933B;
+}
+
+.info-maintence {
+  color: white;
+}
+
+.info-maintence > p {
+  text-align: justify;
+}
+
+.img-maintence {
+  background-image: url("../img/agri.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* STYLES FOR ICON */

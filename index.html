@@ -33,22 +33,25 @@
         <div id="nav-bar" class="container">
             <div class="navbar-brand">
                 <a href="index.html">
-                    <img src="img/agromarket-logo.png" height="100" alt="">
+                    <img src="img/agromarket-logo.png" height="80" alt="">
                 </a>
             </div>
 
             <div class="nav-container">
                 <div class="nav-info">
-                    <input class="form-control" placeholder="Buscar en agromarkt" type="text" name="search-products" id="search-products">
+                    <input class="form-control" placeholder="Buscar en agromarkt" type="text" name="search-products"
+                        id="search-products">
                     <span>
-                        <a target="_blank" href="#" class="nav-social-link"><img src="img/search-icon.png" height="20" alt=""></a>
+                        <a target="_blank" href="#" class="nav-social-link"><img src="img/search-icon.png" height="20"
+                                alt=""></a>
                     </span>
                 </div>
 
                 <div class="nav-social">
                     <ul class="nav-social-items">
                         <li>
-                            <a target="_blank" href="#" class="nav-social-link"><img src="img/shopping-basket.png" height="30" alt=""></a>
+                            <a target="_blank" href="#" class="nav-social-link"><img src="img/shopping-basket.png"
+                                    height="30" alt=""></a>
                         </li>
                     </ul>
 
@@ -60,22 +63,45 @@
                 </div>
             </div>
         </div>
+
+        <!-- category bar -->
+        <div class="bg-success">
+            <div class="container d-flex justify-content-center align-items-center">
+                <span><p style="color: white; font-weight: 500; margin: 0;">Nuestras categorias: </p></span>
+
+                <a id="perecederos" class="btn category-link pt-0 pb-0">Perecederos</a>
+                <a id="no-perecederos" class="btn category-link pt-0 pb-0">No perecederos</a>
+
+            </div>
+        </div>
+
+
+        <!-- end category bar -->
+
+
         <!-- toggle menu  -->
         <div class="content-items">
             <div class="btn-icon-x">
             </div>
             <ul class="navbar-items">
                 <li class="navbar-item">
-                    <a href="#" class="navbar-link">Home</a>
+                    <a href="#" class="navbar-link" style="font-weight: 500;">Soporte</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="about.html" class="navbar-link">About</a>
+                    <a href="" class="navbar-link">Quiero ser proveedor</a>
+                </li>
+
+                <span style="width: 90%; height: 2px; background: rgba(128, 128, 128, 0.468);"></span>
+
+                <li class="navbar-item">
+                    <a href="#services" class="navbar-link">Términos  y condiciones</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#services" class="navbar-link">Services</a>
+                    <a href="#contact" class="navbar-link">Políticas de privacidad</a>
                 </li>
-                <li class="navbar-item">
-                    <a href="#contact" class="navbar-link">Contact Us</a>
+
+                <li class="navbar-item btn-login">
+                    <a href="#contact" class="navbar-link " >Log in</a>
                 </li>
             </ul>
         </div>
@@ -89,7 +115,7 @@
         <div id="content_info_banner">
             <div class="dinamyc-info">
                 <h3 style='color:white; font-weight: 900; font-size:3em; transition: width 2s linear 1s;'>
-                     Ofertas
+                    Ofertas
                 </h3>
                 <h3 style='color:white; font-weight: 900; font-size:3em; transition: width 2s linear 1s;'>
                     Imbatibles</h3>
@@ -108,16 +134,16 @@
     <!-- SECTION OF THE PRODUCTS -->
     <section id="products">
         <h2 class="text-center">Todos</h2>
-        <div class="container-products">
+        <div id="container-products" class="container-products">
 
-            <!-- FIRTS RO   W -->
-            
+            <!-- FIRTS ROW -->
+
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/azucar-morena.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/azucar-morena.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -126,16 +152,19 @@
                     </span>
                     <p class="description">
                         Azucar morena 50 Kg.
-                    </p>      
+                    </p>
+                    <p class="proveedor">
+                        Finca el ahorro
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/cebolla.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/cebolla.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -144,16 +173,16 @@
                     </span>
                     <p class="description">
                         Cebolla blanca.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/huevos.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/huevos.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -162,16 +191,16 @@
                     </span>
                     <p class="description">
                         Cajilla de huevos.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/limon.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/limon.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -180,16 +209,16 @@
                     </span>
                     <p class="description">
                         Limones grandes.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/costal_arroz_min.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/costal_arroz_min.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -198,20 +227,20 @@
                     </span>
                     <p class="description">
                         Costal de arroz 80/20.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <!-- // END FIRTS ROW -->
 
-             <!-- SECOND ROW -->
-            
-             <div class="product-card">
+            <!-- SECOND ROW -->
+
+            <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/papa.jpeg" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/papa.jpeg" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -220,16 +249,16 @@
                     </span>
                     <p class="description">
                         Papa blanca.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/tomate_verde.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/tomate_verde.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -238,16 +267,16 @@
                     </span>
                     <p class="description">
                         Tomate verde Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/perchuga-entera.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/perchuga-entera.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -256,16 +285,16 @@
                     </span>
                     <p class="description">
                         perchuga entera Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/pierna-cerdo.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/pierna-cerdo.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -274,16 +303,16 @@
                     </span>
                     <p class="description">
                         Piernda de cerdo.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/tomate.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/tomate.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -292,20 +321,20 @@
                     </span>
                     <p class="description">
                         Tomate Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <!-- // END SECOND ROW -->
 
             <!-- THIRD ROW -->
-            
+
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/queso.jpg" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/queso.jpg" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -314,16 +343,16 @@
                     </span>
                     <p class="description">
                         Queso seco Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/azucar-refinada.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/azucar-refinada.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -332,16 +361,16 @@
                     </span>
                     <p class="description">
                         Azucar refinada costal.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/chia.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/chia.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -350,16 +379,16 @@
                     </span>
                     <p class="description">
                         Chia Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/frijol-negro.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/frijol-negro.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -368,16 +397,16 @@
                     </span>
                     <p class="description">
                         Frijol Negro x Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
             <div class="product-card">
                 <div class="box-img">
-                  <figure>
-                    <img src="img/products/coco.png" alt="">
-                  </figure>
-                  <span class="btn-add">+</span>
+                    <figure>
+                        <img src="img/products/coco.png" alt="">
+                    </figure>
+                    <span class="btn-add">+</span>
                 </div>
                 <div class="info-product">
                     <p class="p-info">Venta al por mayor</p>
@@ -386,7 +415,7 @@
                     </span>
                     <p class="description">
                         Coco ralado Lbr.
-                    </p>      
+                    </p>
                 </div>
             </div>
 
@@ -394,7 +423,7 @@
 
         </div>
 
-        <span class="load-more">Cargar mas</span>
+        <!-- <span class="load-more">Cargar mas</span> -->
     </section>
 
     <!-- // END SECTION OF THE PRODUCTS -->
@@ -507,10 +536,13 @@
     <section id="contact">
         <!-- SECTION OF THE MAP -->
         <div class="container" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1585498615013!2d-86.2609949!3d12.1012962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155002335862f%3A0x83cbe791564014a3!2sAgroMarky!5e0!3m2!1ses!2sni!4v1707627741141!5m2!1ses!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.1585498615013!2d-86.2609949!3d12.1012962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155002335862f%3A0x83cbe791564014a3!2sAgroMarky!5e0!3m2!1ses!2sni!4v1707627741141!5m2!1ses!2sni"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <!-- direccion anterior -->
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12449.964422107656!2d-86.15713281264212!3d12.086766133857216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sni!4v1700975801730!5m2!1ses!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                <!-- <iframe
+            <!-- <iframe
                 src="https://maps.app.goo.gl/3bFBeMZoBfSkxxuf7"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.7106492447765!2d-118.27555068526856!3d33.99996522793168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c86a8a2ed25f%3A0xf7b4bf486919cad3!2s134%20E%2047th%20Pl%2C%20Los%20Angeles%2C%20CA%2090011%2C%20USA!5e0!3m2!1sen!2sni!4v1650054193658!5m2!1sen!2sni"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -538,7 +570,8 @@
                     <div class="col-md-3">
                         <div class="form-group">
                             <!-- <label for="name">Name*</label> -->
-                            <input class="form-control" name="fullName" type="text" required placeholder="Nombre Completo*">
+                            <input class="form-control" name="fullName" type="text" required
+                                placeholder="Nombre Completo*">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -591,12 +624,12 @@
         <h5><a href="#">2024 Agromarkt</a></h5>
         <ul class="social-icons">
             <li class="social-item"><a target="_blank"
-                    href="https://www.facebook.com/people/AgroMarkt/61556629371045/"><img
-                        src="img/fb.png" alt=""></a> </li>
+                    href="https://www.facebook.com/people/AgroMarkt/61556629371045/"><img src="img/fb.png" alt=""></a>
+            </li>
             <!-- <li class="social-item"><a target="_blank" href="https://www.instagram.com/itzep_services/"><img
                         src="img/ints.png" alt=""></a> </li> -->
-            <li class="social-item"><a target="_blank"
-                    href="https://www.youtube.com/watch?v=MnkYpSa9b0Q"><img src="img/yt.png" alt=""></a>
+            <li class="social-item"><a target="_blank" href="https://www.youtube.com/watch?v=MnkYpSa9b0Q"><img
+                        src="img/yt.png" alt=""></a>
             </li>
         </ul>
         <h6>Veracruz, Managua Nicaragua</h6>
@@ -610,7 +643,8 @@
 
     <!-- GENERAL LOGIC FOR THIS PROJECT -->
     <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/draw-products.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
 </body>
 
 </html>
