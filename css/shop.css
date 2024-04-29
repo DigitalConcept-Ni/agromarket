@@ -4,7 +4,7 @@
     position: fixed;
     /* background: #272727; */
     background: white;
-    left: -100%;
+    /* left: -100%; */
     /* left: 100%; */
     top: 0;
     width: 30%;
@@ -12,29 +12,35 @@
     z-index: 100;
     transition: all 0.70s ease-in-out;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.10);
-    overflow-y: scroll;
-
 }
 
 .visible {
     left: 0;
 }
 
+
+.shop-menu-header{
+    height: 10%;
+    padding: 1rem;
+    color: grey;
+}
+
 .continer-shop-items {
     /* display: flex;
+
     align-items: center; 
     flex-direction: row;
     list-style: none; */
     padding: 1rem;
-    margin-top: 4rem;
     width: 100%;
-    /* background: grey; */
+    height: 75%;
+    overflow-y: scroll;
 }
 
 .shop-item {
     display: flex;
     flex-direction: row;
-    height: 12rem;
+    height: 14rem;
     width: 100%;
     /* background: red; */
     border-bottom: 1px solid grey;
@@ -65,13 +71,44 @@
     font-size: 0.8rem;
 }
 
+.shop-item .shop-info .container-btn-shop{
+    background: #000;
+    height: 1rem;
+}
+
+#container-shop-mount{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.10);
+}
+
 #container-count{
-    position: relative;
-    bottom: 0;
+    background: green;
+    color: white;
+    width: 95%;
+    height: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5rem;
+    padding: .3rem .5rem;
+
+    /* display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
     background: orange;
-    border-radius: 1rem 1rem 0 0;
-    height: 5rem;
-    width: 100%;
+    height: 10%;
+    width: 90%;
+    padding: .7rem;
+    margin: 0 1.5rem;
+
+    color: white;
+    font-size: 1.4rem; */
 }
 
 

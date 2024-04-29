@@ -17,6 +17,10 @@
 
     <!-- GENERAL STULES CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- LINK ICONS BOOSTRAP -->
+
+  <link href="libs/fontawesome-free/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -108,40 +112,54 @@
 
         <!-- toggle menu shop  -->
         <div class="shop-menu" id="shop-menu">
-            <div class="btn-icon-shop-x">
+
+            <div class="shop-menu-header">
+              <h3>Mi cesta</h3>
+              <span class="btn-icon-shop-x"></span>
             </div>
+    
             <div id="continer-shop-items" class="continer-shop-items">
-
-                <!-- <div class="shop-item">
-                    <div class="shop-img">
-                        <figure>
-                            <img src="img/products/cacao.png" alt="">
-                        </figure>
-                    </div>
-                    <div class="shop-info">
-                        <h3>Cacao</h3>
-                        <span>C$ 1200</span>
-                        <h6>Cacao</h6>
-                        <p>Granos Sequeira S.A.</p>
-                        <div class="container-btn-shop">
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-append">
-                                    <button type="button" class="btn btn-danger btn-flat">-</button>
-                                </span>
-                                <input type="text" value="1" class="form-control rounded-0">
-                                <span class="input-group-append">
-                                    <button type="button" class="btn btn-success btn-flat btn-menu-+">+</button>
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
+    
+              <!-- <div class="shop-item">
+                <div class="shop-img">
+                  <figure>
+                      <img src="assets/img/products/Shampoo-en-11.png" alt="">
+                  </figure>
+              </div>
+              <div class="shop-info">
+                  <h6>Acondicionador</h6>
+                  <span>C$ 300</span>
+                  <p class="shop-p">Capilar</p>
+                  <div class="container-btn-shop">
+                      <div class="input-group input-group-sm mb-3">
+                          <input onchange="btnShopPlus(this)" data-id="${e.id}" name="cant" type="number" min+"1" max="1000" step="1" value="1" class="form-control rounded-0">
+                      </div>
+                      <span>Total producto: C$<span>0.00</span></span>
+                  </div>
+              </div>
+    
+              </div> -->
             </div>
-            <div id="container-count">
-                <span>Total: <span>0.00</span></span>
+    
+            <div id="container-shop-mount">
+    
+              <span id="cont-delivery-cost" style="font-size: .9rem; margin: .4rem 0rem; display: none;"><strong>Costo de envio: </strong> C$ <span id="delivery-cost">0.00</span> </span>
+              <!-- <div class="container-input">
+                <label for="moto">Moto: </label>
+                <input id="moto" type="checkbox">
+    
+                <label for="moto">Vehivulo: </label>
+                <input id="vehiculo" type="checkbox">
+              </div> -->
+    
+              <div id="container-count">
+                <span>Procesar compra</span>
+                  <span>Total: C$<span id="total-mount">0.00</span></span>
+              </div>
+              
             </div>
-        </div>
+            
+          </div>
     </nav>
 
     <!-- // End Navbar -->
