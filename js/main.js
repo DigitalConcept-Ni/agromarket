@@ -22,6 +22,12 @@ let time = setInterval(function () {
     }
 }, 3500);
 
+// DRAW ALL PRODUCTOS
+
+window.addEventListener("load", function (event) {
+    drawProduct('all')
+});
+
 
 
 // Function for the icon button
@@ -47,11 +53,11 @@ const btnIconX = () => {
 }
 
 
-links.forEach(function (e) {
-    e.addEventListener('click', function () {
-        menu.classList.toggle('visible');
-    })
-})
+// links.forEach(function (e) {
+//     e.addEventListener('click', function () {
+//         menu.classList.toggle('visible');
+//     })
+// })
 
 btnIcon();
 btnIconX();

@@ -54,6 +54,23 @@ nav {
 
 .nav-social-items li {
   margin: 0rem 0.5rem;
+  /* background: grey; */
+  position: relative;
+}
+
+/* STYLES FOR THE ICON SHOP */
+
+#count-items{
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  border-radius: .6rem;
+  padding: 1px 6px;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 500;
+  background: green;
+  color: white;
 }
 
 
@@ -104,7 +121,7 @@ nav {
 
 .navbar-item {
   margin: 1.5rem 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   border: 1px solid grey;
   width: 90%;
   border-radius: .3rem;

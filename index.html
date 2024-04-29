@@ -17,6 +17,10 @@
 
     <!-- GENERAL STULES CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- LINK ICONS BOOSTRAP -->
+
+  <link href="libs/fontawesome-free/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -49,9 +53,9 @@
 
                 <div class="nav-social">
                     <ul class="nav-social-items">
-                        <li>
-                            <a target="_blank" href="#" class="nav-social-link"><img src="img/shopping-basket.png"
-                                    height="30" alt=""></a>
+                        <li class="btn-icon-shop">
+                            <span id="count-items">0</span>
+                            <img src="img/shopping-basket.png" height="30" alt="">
                         </li>
                     </ul>
 
@@ -67,15 +71,15 @@
         <!-- category bar -->
         <div class="bg-success">
             <div class="container d-flex justify-content-center align-items-center">
-                <span><p style="color: white; font-weight: 500; margin: 0;">Nuestras categorias: </p></span>
+                <span>
+                    <p style="color: white; font-weight: 500; margin: 0;">Nuestras categorias: </p>
+                </span>
 
                 <a id="perecederos" class="btn category-link pt-0 pb-0">Perecederos</a>
                 <a id="no-perecederos" class="btn category-link pt-0 pb-0">No perecederos</a>
 
             </div>
         </div>
-
-
         <!-- end category bar -->
 
 
@@ -94,17 +98,68 @@
                 <span style="width: 90%; height: 2px; background: rgba(128, 128, 128, 0.468);"></span>
 
                 <li class="navbar-item">
-                    <a href="#services" class="navbar-link">Términos  y condiciones</a>
+                    <a href="#services" class="navbar-link">Términos y condiciones</a>
                 </li>
                 <li class="navbar-item">
                     <a href="#contact" class="navbar-link">Políticas de privacidad</a>
                 </li>
 
                 <li class="navbar-item btn-login">
-                    <a href="#contact" class="navbar-link " >Log in</a>
+                    <a href="#contact" class="navbar-link ">Log in</a>
                 </li>
             </ul>
         </div>
+
+        <!-- toggle menu shop  -->
+        <div class="shop-menu" id="shop-menu">
+
+            <div class="shop-menu-header">
+              <h3>Mi cesta</h3>
+              <span class="btn-icon-shop-x"></span>
+            </div>
+    
+            <div id="continer-shop-items" class="continer-shop-items">
+    
+              <!-- <div class="shop-item">
+                <div class="shop-img">
+                  <figure>
+                      <img src="assets/img/products/Shampoo-en-11.png" alt="">
+                  </figure>
+              </div>
+              <div class="shop-info">
+                  <h6>Acondicionador</h6>
+                  <span>C$ 300</span>
+                  <p class="shop-p">Capilar</p>
+                  <div class="container-btn-shop">
+                      <div class="input-group input-group-sm mb-3">
+                          <input onchange="btnShopPlus(this)" data-id="${e.id}" name="cant" type="number" min+"1" max="1000" step="1" value="1" class="form-control rounded-0">
+                      </div>
+                      <span>Total producto: C$<span>0.00</span></span>
+                  </div>
+              </div>
+    
+              </div> -->
+            </div>
+    
+            <div id="container-shop-mount">
+    
+              <span id="cont-delivery-cost" style="font-size: .9rem; margin: .4rem 0rem; display: none;"><strong>Costo de envio: </strong> C$ <span id="delivery-cost">0.00</span> </span>
+              <!-- <div class="container-input">
+                <label for="moto">Moto: </label>
+                <input id="moto" type="checkbox">
+    
+                <label for="moto">Vehivulo: </label>
+                <input id="vehiculo" type="checkbox">
+              </div> -->
+    
+              <div id="container-count">
+                <span>Procesar compra</span>
+                  <span>Total: C$<span id="total-mount">0.00</span></span>
+              </div>
+              
+            </div>
+            
+          </div>
     </nav>
 
     <!-- // End Navbar -->
@@ -135,291 +190,6 @@
     <section id="products">
         <h2 class="text-center">Todos</h2>
         <div id="container-products" class="container-products">
-
-            <!-- FIRTS ROW -->
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/azucar-morena.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 1100.00
-                    </span>
-                    <p class="description">
-                        Azucar morena 50 Kg.
-                    </p>
-                    <p class="proveedor">
-                        Finca el ahorro
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/cebolla.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 30.00
-                    </span>
-                    <p class="description">
-                        Cebolla blanca.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/huevos.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 155.00
-                    </span>
-                    <p class="description">
-                        Cajilla de huevos.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/limon.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 8.50
-                    </span>
-                    <p class="description">
-                        Limones grandes.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/costal_arroz_min.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 315.00
-                    </span>
-                    <p class="description">
-                        Costal de arroz 80/20.
-                    </p>
-                </div>
-            </div>
-
-            <!-- // END FIRTS ROW -->
-
-            <!-- SECOND ROW -->
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/papa.jpeg" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 35.00
-                    </span>
-                    <p class="description">
-                        Papa blanca.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/tomate_verde.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 25.00
-                    </span>
-                    <p class="description">
-                        Tomate verde Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/perchuga-entera.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 78.00
-                    </span>
-                    <p class="description">
-                        perchuga entera Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/pierna-cerdo.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 8.50
-                    </span>
-                    <p class="description">
-                        Piernda de cerdo.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/tomate.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 30.00
-                    </span>
-                    <p class="description">
-                        Tomate Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <!-- // END SECOND ROW -->
-
-            <!-- THIRD ROW -->
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/queso.jpg" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 35.00
-                    </span>
-                    <p class="description">
-                        Queso seco Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/azucar-refinada.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 780.00
-                    </span>
-                    <p class="description">
-                        Azucar refinada costal.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/chia.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 32.00
-                    </span>
-                    <p class="description">
-                        Chia Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/frijol-negro.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 28.50
-                    </span>
-                    <p class="description">
-                        Frijol Negro x Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="box-img">
-                    <figure>
-                        <img src="img/products/coco.png" alt="">
-                    </figure>
-                    <span class="btn-add">+</span>
-                </div>
-                <div class="info-product">
-                    <p class="p-info">Venta al por mayor</p>
-                    <span class="price">
-                        C$ 99.00
-                    </span>
-                    <p class="description">
-                        Coco ralado Lbr.
-                    </p>
-                </div>
-            </div>
-
-            <!-- // END SECOND ROW -->
 
         </div>
 
@@ -644,6 +414,7 @@
     <!-- GENERAL LOGIC FOR THIS PROJECT -->
     <script src="js/main.js"></script>
     <script src="js/draw-products.js"></script>
+    <script src="js/shop.js"></script>
     <!-- <script src="js/slider.js"></script> -->
 </body>
 
