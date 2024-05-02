@@ -60,7 +60,7 @@ var sale = {
             </div>
             <div class="shop-info">
                 <h6>${e.descripcion}</h6>
-                <span>C$ ${e.precio}</span>
+                <span>C$ ${e.precio} x ${e.udm}</span>
                 <p class="shop-p">${e.categoria}</p>
                 <div class="container-btn-shop">
                     <div class="input-group input-group-sm mb-3">
@@ -152,14 +152,14 @@ const btnShopPlus = (e) =>{
     let id = e.getAttribute('data-id');
     let index = sale.details.products.findIndex(index => index.item == id);
     sale.details.products[index].cant = $(e).val();
-    sale.listProduct()
+    sale.calculateInvoice()
 }
 
 $(function(){
     $('#container-count').on('click', function(){
         Swal.fire({
-            title: "Proceso de compra",
-            text: "Su pedido ha sido procesado satisfactoriamente y será entregado en un periodo de 1 hábil o menos",
+            title: "Proceso de compra Exitoso",
+            text: "Su pedido ha sido procesado, será entregado en un periodo de 1 hábil o menos",
             // icon: "question"
           });
         sale.details.products = [];
