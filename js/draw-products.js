@@ -2,7 +2,7 @@ const getData = async (category) => {
 
   let isInteger = Number.isInteger(category);
 
-  return await fetch("./../js/products.JSON")
+  return await fetch("./../js/products.json")
     .then(res => res.json())
     .then((res) => {
 
