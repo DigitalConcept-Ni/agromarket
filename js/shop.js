@@ -69,7 +69,7 @@ var sale = {
                                     <i class="fa fa-trash"></i>
                                 </button>
                         </span>
-                        <input onchange="btnShopPlus(this)" data-id="${e.id}" name="cant" type="number" min+"1" max="1000" step="1" value="1" class="form-control rounded-0">
+                        <input onchange="btnShopPlus(this)" data-id="${e.item}" name="cant" type="number" min+"1" max="1000" step="1" value="1" class="form-control rounded-0">
                     </div>
                     <hr>
                     <span>Total producto: C$<span id="${e.item}">0.00</span></span>
@@ -147,6 +147,27 @@ const deleteItem = (id) =>{
         cont_delivery.style.display = 'None';
     }
 }
+
+const btnShopPlus = (e) =>{
+    let id = e.getAttribute('data-id');
+    let index = sale.details.products.findIndex(index => index.item == id);
+    sale.details.products[index].cant = $(e).val();
+    sale.listProduct()
+}
+
+$(function(){
+    $('#container-count').on('click', function(){
+        Swal.fire({
+            title: "Proceso de compra",
+            text: "Su pedido ha sido procesado satisfactoriamente y será entregado en un periodo de 1 hábil o menos",
+            // icon: "question"
+          });
+        sale.details.products = [];
+        sale.listProduct();
+        let contador = document.getElementById('count-items');
+        contador.innerHTML = 0;
+    })
+})
 
 let menuShop = document.querySelector('#shop-menu'); // select the buttons on the menu panel
 // let links = document.querySelectorAll('a[class="navbar-link"]'); // Select all links from the panel menu
